@@ -9,6 +9,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <canvas:CanvasControl CreateResources="CanvasControl_CreateResources" Draw="CanvasControl_Draw" />
+        <canvas:CanvasControl x:ConnectionId='1'                                                                           />
     </Grid>
 </Page>
+

@@ -17,5 +17,11 @@ namespace Win2DRepro
 	public:
 		MainPage();
 
-	};
+    private:
+        void CanvasControl_CreateResources(Microsoft::Graphics::Canvas::UI::Xaml::CanvasControl^ sender, Microsoft::Graphics::Canvas::UI::CanvasCreateResourcesEventArgs^ args);
+        Windows::Foundation::IAsyncAction^ CanvasControl_CreateResourcesAsync(Microsoft::Graphics::Canvas::UI::Xaml::CanvasControl^ sender, Microsoft::Graphics::Canvas::UI::CanvasCreateResourcesEventArgs^ args);
+        void CanvasControl_Draw(Microsoft::Graphics::Canvas::UI::Xaml::CanvasControl^ sender, Microsoft::Graphics::Canvas::UI::Xaml::CanvasDrawEventArgs^ args);
+
+        Microsoft::Graphics::Canvas::Effects::PixelShaderEffect^ _effect;
+    };
 }
